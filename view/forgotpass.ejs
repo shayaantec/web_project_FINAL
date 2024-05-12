@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+    }
+
+    .form-control {
+      border-radius: 25px;
+      border: 1px solid #ccc;
+    }
+
+    .btn-primary {
+  background-color: #389bdd;
+  border-color: #389bdd;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #2b7cbf;
+  border-color: #2b7cbf;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mb-4">Forgot Password</h1>
+    <form action="/forgot-password" method="POST">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Reset Password</button>
+      </div>
+    </form>
+    <p class="text-center mt-3">Remembered your password? <a href="/signin">Log in</a></p>
+  </div>
+</body>
+</html>
